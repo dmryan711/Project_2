@@ -8,6 +8,12 @@ Paste:
   MYSQL_PORT=
   MYSQL_USERNAME=
   MYSQL_PASSWORD=
+  MYSQL_DATABASE =
+  
+
+  Create a database before trying to connect
 
 Insert your MySQL credentials.  
 Test to see if it works by typing npm start in the terminal.
+
+Add .env file to gitIgnore by typing .env
