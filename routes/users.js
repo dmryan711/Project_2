@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  //Ad DB Stuff here
+  res.json({Users:"Dummy Data"});
 });
+
+//Add User
+router.post('/',function(req,res,next){
+  //Add DB stuff here
+});
+
+
 
 module.exports = router;
