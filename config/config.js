@@ -7,7 +7,7 @@ module.exports = {
         "password": process.env.MYSQL_PASSWORD,
         "host": process.env.MYSQL_HOSTNAME,
         "port": process.env.MYSQL_PORT,
-        "database": "todo_dev",
+        "database": "SchoolFinder",
         "dialect": "mysql"
     },
     "test": {
