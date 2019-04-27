@@ -6,3 +6,99 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* CSS COVER PARENT RESULTS SCHOOL */
+
+img {
+  width: 130%;
+  z-index: 0;
+}
+
+#logo {
+  position: relative;
+  font-size: 50px;
+  z-index: 1;
+  font-family: "Playfair Display";
+}
+
+ul {
+  list-style: none;
+}
+
+.school-name,
+.add-btn {
+  display: inline-block;
+}
+
+.add-btn {
+  max-width: 170px;
+}
+
+.learn-btn,
+.remove-btn {
+  max-width: 100px;
+}
+
+li {
+  margin-bottom: 1px solid gray;
+}
+
+h5 {
+  margin-top: 20px;
+
+}
+
+.s-header {
+  
+  width: 100%;
+  /* /* overflow-x: hidden;
+  overflow-y: hidden; */
+  /* transition: background-color .25s;
+  transition-property: background-color;
+  transition-duration: .25s;
+  transition-timing-function: ease;
+  transition-delay: 0s; */ 
+  height: 70px;
+  display: block;
+  border: 1px solid orange;
+}
+
+.s-header_logo {
+  text-align: left;
+}
+
+.home-link-container {
+  text-align: right;
+}
+
+.search-results {
+  border: 1px solid blueviolet;
+  padding: 25px;
+}
+
+.school-name-list,
+.event-name-list {
+  display: inline-block;
+}
+
+#div-school-logo {
+  background-color: aqua;
+}
+
+#school-description {
+  font-size: 20px;
+}
+
+.row-school {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+#school-name {
+  text-align:center;
+}
+
+.event-name-list {
+  font-size: 18px;
+}
+
