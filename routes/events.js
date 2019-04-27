@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var db = require('../models/index');
 
-/* GET users listing. */
+/* GET Event listing. */
 router.get('/:id', function(req, res, next) {
 
  db.Events.findAll({
@@ -16,7 +16,7 @@ router.get('/:id', function(req, res, next) {
 
 });
 
-//Add User
+//Add Event
 router.post('/',function(req,res,next){
   db.Events.create(req.body).then(function(eventCreated){
       res.json(eventCreated);
