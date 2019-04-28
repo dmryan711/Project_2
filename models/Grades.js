@@ -9,7 +9,15 @@ module.exports = (sequelize, DataTypes) => {
         },
         
     });
+    
+    Grades.associate = function (models) {
+        Grades.belongsToMany(models.Schoolinfo, 
+            {through: models.SchoolGrades,
+                foreignKey: "GradeId",
+            });
+    }
+    
     return Grades;
-
+    
     
 }
