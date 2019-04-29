@@ -11,17 +11,14 @@ router.get('/:grade',function(req,res,next){
     }]
     }).then((data, err) => {
       if (err) throw err;
-        res.json(data)
+      data.forEach(element => {
+          
+          console.log(element.dataValues.school_name);
+      });
+        
+        res.render("results", { data });
       })
     
-    
-    // db..findAll({
-    //     where: {grade: grade},
-    //     include: [{
-    //         model: Schoolinfo,
-    //     }]
-    // });
-    // res.json({Schools:"Dummy Data"});
 });
 router.post('/',function(req,res,next){
     console.log(req.body);
