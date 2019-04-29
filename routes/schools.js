@@ -11,12 +11,13 @@ router.get('/:grade',function(req,res,next){
     }]
     }).then((data, err) => {
       if (err) throw err;
+      
       data.forEach(element => {
           
           console.log(element.dataValues.school_name);
       });
         
-        res.render("results", { data });
+        res.render("results", { "data": data, "grade": req.params.grade });
       })
     
 });
