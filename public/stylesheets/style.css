@@ -1,11 +1,11 @@
-body {
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
-}
+} */
 
 /* CSS COVER PARENT RESULTS SCHOOL */
 
@@ -36,7 +36,7 @@ ul {
 
 .learn-btn,
 .remove-btn {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 li {
@@ -51,13 +51,6 @@ h5 {
 .s-header {
   
   width: 100%;
-  /* /* overflow-x: hidden;
-  overflow-y: hidden; */
-  /* transition: background-color .25s;
-  transition-property: background-color;
-  transition-duration: .25s;
-  transition-timing-function: ease;
-  transition-delay: 0s; */ 
   height: 70px;
   display: block;
   border: 1px solid orange;
@@ -104,5 +97,22 @@ h5 {
 
 #school-tution {
   font-size: 18px;
+}
+
+th {
+  text-align: center;
+}
+
+#sr,
+#search-results-title {
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+#fs {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  font-size: 20px;
 }
 
