@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    var SchoolGrades  = sequelize.define("SchoolGrade", {
+    var SchoolGrades  = sequelize.define("SchoolGrades", {
         schoolID: {
             type: DataTypes.STRING,
             allowNull: false
@@ -10,9 +10,9 @@ module.exports = (sequelize, DataTypes) => {
         },
 
     });
+    
+     
+    
+
     return SchoolGrades;
-
-    Schoolinfo.belongsToMany(Grades, { through: SchoolGrades });
-    Grades.belongsToMany(Schoolinfo, { through: SchoolGrades });
-
 }
