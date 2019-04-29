@@ -18,6 +18,7 @@ router.get('/:id', function(req, res, next) {
 
 //Add User
 router.post('/',function(req,res,next){
+  req.body.email = req.body.email.toLowerCase();
   db.User.create(req.body).then(function(userCreated){
       res.json(userCreated);
   });
