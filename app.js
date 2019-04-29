@@ -8,7 +8,6 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var schoolsRouter = require('./routes/schools');
-var favoritesRouter = require('./routes/favorites');
 var registerRouter = require('./routes/register.js');
 var eventsRouter = require('./routes/events');
 
