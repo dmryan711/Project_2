@@ -11,6 +11,7 @@ var resultsRouter = require('./routes/results');
 var favoritesRouter = require('./routes/favorites');
 var registerRouter = require('./routes/register.js');
 var eventsRouter = require('./routes/events');
+var schoolRouter = require("./routes/school");
 
 //HTML ROUTES
 var profileRouter = require('./routes/htmlRoutes/profile');
@@ -36,6 +37,7 @@ app.use('/favorites',favoritesRouter);
 app.use('/results',resultsRouter);
 app.use('/register', registerRouter);
 app.use('/events',eventsRouter);
+app.use('/school', schoolRouter);
 
 //HTML Routes
 

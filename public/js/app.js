@@ -27,9 +27,6 @@ function searchByGrade() {
         grade: $("#input-grade").val()
     }
 
-    //alert($("#input-grade").val());
-
-    var userGradeInputToDisplay = $("#input-grade").attr("data-name");
     location.href = "results/" + userGradeInput.grade;
 }
 
@@ -41,6 +38,8 @@ function searchByGrade() {
 $(document).on("click", ".learnBtn", schoolDetail);
 
 function schoolDetail() {
+
+    
     var key = $(this).attr("value");
     console.log("view school ID ", key);
 
@@ -74,7 +73,7 @@ function schoolDetail() {
 
     })
 
-    location.href = "school.html";
+    //location.href = "school/";
 }
 //LEARN MORE END
 //========================================================
