@@ -27,53 +27,7 @@ function searchByGrade() {
         grade: $("#input-grade").val()
     }
 
-    alert($("#input-grade").val());
-
-    var userGradeInputToDisplay = $("#input-grade").attr("data-name");
-
-    $.get("/", userGradeInput, function(data) {
-        $("#search-results-title").append(userGradeInputToDisplay)
-        for (var i = 0; i < data.length; i++) {
-
-            //Prepare a variable to be used as attribute to link button, clicked elements and rows
-            var id = data[i].school_name.replace(/\s/g,''); 
-
-            //For each school in DB create a "learn more" button with a specific value to
-            //associate to that school
-            var learnBtn = document.createElement("button");
-            learnBtn.setAttribute("class", "learn-btn btn btn-sm btn-dark col-lg-2");
-            learnBtn.setAttribute("value", data[i].school_id);
-            learnBtn.innerHTML = "LEARN MORE";
-
-            //For each school in DB create a "add to favorite" button with a specific value to
-            //associate to that school
-            var addBtn = document.createElement("button");
-            addBtn.setAttribute("class", "add-btn btn btn-sm btn-dark col-lg-2");
-            addBtn.setAttribute("value", data[i].school_id);
-            addBtn.innerHTML = "ADD TO FAVORITES";
-
-            //For each school in DB create a h4 to hold the school name of the school
-            var schoolName = document.createElement("h4");
-            schoolName.setAttribute("class", "school-name col-lg-9");
-            schoolName.setAttribute("data-name", data[i].school_id);
-            schoolName.setAttribute("value", data[i].school_name);
-
-            //Create a "td" to hold the data in the table
-            var td = document.createElement("td");
-            //Create a row to hold each school and its "add to favorites" button
-            var newRow = document.createElement("tr");
-            newRow.setAttribute("id", "row" + id);
-            //Append all elements of the school to the td
-            td.append(schoolName, addBtn);
-            //Append the td to its row
-            newRow.append(td);
-            //Append the row to the table body
-            $("#tbody").append(newRow);
-        }
-       
-    })
-    $("#input-grade").val("Select a Grade");
-    location.href = "results.html";
+    location.href = "results/" + userGradeInput.grade;
 }
 
 //SEARCH BY GRADE END
@@ -84,6 +38,8 @@ function searchByGrade() {
 $(document).on("click", ".learnBtn", schoolDetail);
 
 function schoolDetail() {
+
+    
     var key = $(this).attr("value");
     console.log("view school ID ", key);
 
@@ -117,7 +73,7 @@ function schoolDetail() {
 
     })
 
-    location.href = "school.html";
+    //location.href = "school/";
 }
 //LEARN MORE END
 //========================================================

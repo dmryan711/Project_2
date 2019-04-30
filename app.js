@@ -7,10 +7,11 @@ var logger = require('morgan');
 //API ROUTES
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var schoolsRouter = require('./routes/schools');
+var resultsRouter = require('./routes/results');
 var favoritesRouter = require('./routes/favorites');
 var registerRouter = require('./routes/register.js');
 var eventsRouter = require('./routes/events');
+var schoolRouter = require("./routes/school");
 
 //HTML ROUTES
 var profileRouter = require('./routes/htmlRoutes/profile');
@@ -33,9 +34,10 @@ app.use('/', indexRouter);
 //Data Routes
 app.use('/users', usersRouter);
 app.use('/favorites',favoritesRouter);
-app.use('/schools',schoolsRouter);
+app.use('/results',resultsRouter);
 app.use('/register', registerRouter);
 app.use('/events',eventsRouter);
+app.use('/school', schoolRouter);
 
 //HTML Routes
 
