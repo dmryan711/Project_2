@@ -8,20 +8,9 @@
                 <div id="search">
                     <select id="input-grade" class="custom-select mr-sm-2">
                         <option value="Select a Grade">Select a Grade</option>
-                        <option value="pk" data-name="Pre-K">Pre-K</option>
-                        <option value="k" data-name="Kindergarten">Kindergarten</option>
-                        <option value="1" data-name="Grade 1">Grade 1</option>
-                        <option value="2" data-name="Grade 2">Grade 2</option>
-                        <option value="3" data-name="Grade 3">Grade 3</option>
-                        <option value="4" data-name="Grade 4">Grade 4</option>
-                        <option value="5" data-name="Grade 5">Grade 5</option>
-                        <option value="6" data-name="Grade 6">Grade 6</option>
-                        <option value="7" data-name="Grade 7">Grade 7</option>
-                        <option value="8" data-name="Grade 8">Grade 8</option>
-                        <option value="9" data-name="Grade 9">Grade 9</option>
-                        <option value="10" data-name="Grade 10">Grade 10</option>
-                        <option value="11" data-name="Grade 11">Grade 11</option>
-                        <option value="12" data-name="Grade 12">Grade 12</option>
+                        {{#each data}}
+                        <option value="{{this.dataValues.grade}}" data-name="{{this.dataValues.grade}}">{{this.dataValues.name}}</option>
+                        {{/each}}
                     </select>
                     <button class="btn btn-dark" id="search-btn">SEARCH</button>
                 </div>
