@@ -28,7 +28,8 @@ module.exports = (sequelize, DataTypes) => {
 
     Schoolinfo.associate = (models) => {
         Schoolinfo.hasMany(models.Events, {
-            onDelete: "cascade"
+            onDelete: "cascade",
+            foreignKey: 'school_id'
         });
     }
     

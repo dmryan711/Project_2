@@ -16,9 +16,7 @@ module.exports = (sequelize, DataTypes) => {
 
     Events.associate = function(models){
         Events.belongsTo(models.Schoolinfo, {
-            foreighKey: {
-                allowNull: false
-            }
+            foreighKey: 'school_id'
         });
 
 
