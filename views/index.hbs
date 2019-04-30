@@ -1,43 +1,43 @@
-
-        <div class="row">
-            <div class="col-lg-6">
-                <span id="logo">SCHOOL FINDER</span>
-                <!-- <span class="hamburger-box"></span>
+<div class="row">
+    <div class="col-lg-6">
+        <span id="logo">SCHOOL FINDER</span>
+        <!-- <span class="hamburger-box"></span>
             <span class="line line--1"></span>
             <span class="line line--2"></span> -->
-                <div id="search">
-                    <select id="input-grade" class="custom-select mr-sm-2">
-                        <option value="Select a Grade">Select a Grade</option>
-                        {{#each data}}
-                        <option value="{{this.dataValues.grade}}" data-name="{{this.dataValues.grade}}">{{this.dataValues.name}}</option>
-                        {{/each}}
-                    </select>
-                    <button class="btn btn-dark" id="search-btn">SEARCH</button>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <img src="img/boy-glasses2.jpg" alt="Boy with glasses">
-            </div>
-
+        <div id="search">
+            <select id="input-grade" class="custom-select mr-sm-2">
+                <option value="Select a Grade">Select a Grade</option>
+                {{#each data}}
+                <option value="{{this.dataValues.grade}}" data-name="{{this.dataValues.grade}}">{{this.dataValues.name}}
+                </option>
+                {{/each}}
+            </select>
+            <button class="btn btn-dark" id="search-btn">SEARCH</button>
         </div>
     </div>
-    <!-- Modal Alert Grade Needed -->
-    <div class="modal fade" id="modal-required-grade" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="answer-all">GRADE REQUIRED</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
-                </div>
+    <div class="col-lg-6">
+        <img src="img/boy-glasses2.jpg" alt="Boy with glasses">
+    </div>
+
+</div>
+</div>
+<!-- Modal Alert Grade Needed -->
+<div class="modal fade" id="modal-required-grade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="answer-all">GRADE REQUIRED</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">OK</button>
             </div>
         </div>
-    
+    </div>
+
     <!-- JQUERY AND JS LINKS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

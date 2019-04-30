@@ -14,7 +14,7 @@ router.get("/:id", function(req, res, next) {
       ]
     }).then((data, err) => {
       if (err) throw err;
-      console.log(data);
+      console.log(data[0]);
 
       res.render("school");
     });
