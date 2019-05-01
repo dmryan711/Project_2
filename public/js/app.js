@@ -1,6 +1,31 @@
 var addBtn;
 var schoolName;
 
+var navButton = document.querySelector("#search-btn");
+var divOpen = document.querySelector(".div-open");
+
+var tween = TweenLite.to(".cover-img", 2, {
+    width: "40%"
+});
+
+var tl = new TimelineLite();
+
+tl.to(".cover-img", 2, {
+    width: "55%",
+    ease: Power2.easeOut
+})
+.to("div-animate", 2, {
+    height: "100%",
+    ease: Power2.easeOut
+}, "-=2"
+).fromTo(".div-open", 0.5, {
+    opacity:0,
+    x: 50,
+    ease: Power2.easeOut
+},{
+    opacity: 1,
+    x: 0
+})
 
 $("#search-btn").on("click", function(event) {
     console.log("search btn clicked")
