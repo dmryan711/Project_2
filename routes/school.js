@@ -18,7 +18,7 @@ router.get("/:id", function(req, res, next) {
 
       let schoolData = data[0].dataValues.Schoolinfo.dataValues;
       let events = data[0].dataValues
-        console.log("DEBUG: " , events.event);
+       
       res.render("school", { schoolData: schoolData, events: events });
     });
     
