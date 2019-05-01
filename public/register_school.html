@@ -15,35 +15,78 @@
 </head>
 <body>
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+                <div class="column">
                 
               
     <form>
-    <h3><div style="text-align:center">Let's get started by setting up your SchoolFinder account.</div></h3>
+    <h3><div style="text-align:center">Admin SchoolFinder account - Create Your School</div></h3>
         <ul class="form-style-1">
-            <li><label>Parent Name/ Guardian <span class="required">*</span></label><input type="text" name="field1" class="field-divided" id="first_name" placeholder="First" /> <input type="text" name="field2" class="field-divided" id="last_name" placeholder="Last" /></li>
+            <li><label>School/Institution Name <span class="required">*</span></label>
+                <input type="text" name="field1" class="field-long" id="school_name" placeholder="School Name" /></li>
             <li>
-                <label id="email">Email (This will be your login/username)<span class="required">*</span></label>
+                <label id="school_email">Email (This will be your login/username)<span class="required">*</span></label>
                 <input type="email" name="field3" class="field-long" />
             </li>
             <li>
-                <li><label >Must be at least 8 characters<span class="required">*</span></label><input type="text" id="parent_password" name="field1" class="field-divided" placeholder="Password" /> <input type="text" name="field2" class="field-divided" placeholder="Confirm Password" /></li>
+                <li><label >Must be at least 8 characters<span class="required">*</span></label><input type="text" id="school_password" name="field1" class="field-divided" placeholder="Password" /> <input type="text" name="field2" class="field-divided" placeholder="Confirm Password" /></li>
  
             <li>
-                <input type="submit" id="user-submit" value="Submit" />
+                <br><br>
+
+            <li>
+                        <label>School Type <span class="required">*</span></label>
+                        <select name="field4" class="field-select" id="school_type">
+                        <option value="Public">Public</option>
+                        <option value="Charter">Charter</option>
+                        <option value="Private">Private</option>
+                        </select>
+            </li>   
+
+            <li>
+                <label id="school_address">School Address <span class="required">*</span></label>
+                <input type="email" name="field3" class="field-long" />
             </li>
+
+
+
+            <li>
+                    <li><label>Zip/Borough <span class="required">*</span></label><input type="text" id="zipcode" name="field1" class="field-divided" placeholder="Zip Code" /> <input type="text" id = "school_borough" name="field2" class="field-divided" placeholder="Borough" /></li>
+     
+            <li>
+            <li>
+                    <li><label>City/State <span class="required">*</span></label><input type="text" id="city" name="field1" class="field-divided" placeholder="City" /> <input type="text" id = "stateh" name="field2" class="field-divided" placeholder="State" /></li>
+
+
+            <li>
+                    <label>School Description <span class="required">*</span></label>
+                    <textarea name="field5" id="description" class="field-long field-textarea"></textarea>
+            </li>
+
+            <li>
+                    <input type="submit" value="Submit" />
+                </li>
+    
         </ul>
         </form>
-        </div> 
     </div>
 
-
-
+        <div class="column"></div>
+    </div> 
 </body>
 </html>
 
-<script type="text/javascript" src="js/register_form.js"></script>
+tuition
+website
+description
 
+
+<!-- school_type: {
+    type: DataTypes.STRING(20),
+}, -->
+
+<!-- logo: {
+    type: DataTypes.STRING(100),
+}, -->
 
 
 <style type="text/css">
