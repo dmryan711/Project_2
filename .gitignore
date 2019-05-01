@@ -5,7 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.env
+#.env
 
 # Runtime data
 pids
@@ -57,10 +57,10 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
+#.env
 
 # next.js build output
 .next
 
 # enviornment values 
-.env
+#.env

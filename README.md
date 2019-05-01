@@ -10,10 +10,10 @@ Paste:
   MYSQL_PASSWORD=
   MYSQL_DATABASE =
   
-
-  Create a database before trying to connect
+  Drop any database with the name "SchoolFinder"
+  Create a database called SchoolFinder 
+  Run all of the table alteration commands
 
 Insert your MySQL credentials.  
 Test to see if it works by typing npm start in the terminal.
 
-Add .env file to gitIgnore by typing .env
