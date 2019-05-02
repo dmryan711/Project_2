@@ -200,6 +200,14 @@ nav {
   object-position: top;
 }
 
+/* #logo {
+  position: relative;
+  font-size: 50px;
+  z-index: 1;
+  font-family: "Playfair Display";
+} */
+
+
 ul {
   list-style: none;
 }
