@@ -10,22 +10,30 @@ var tween = TweenLite.to(".cover-img", 2, {
 
 var tl = new TimelineLite();
 
-tl.to(".cover-img", 2, {
-    width: "55%",
-    ease: Power2.easeOut
-})
-.to("div-animate", 2, {
+// tl.to(".cover-img", 1, {
+//     width: "50%",
+//     ease: Power2.easeOut
+// })
+tl.to(".div-animate", 0.5, {
     height: "100%",
     ease: Power2.easeOut
 }, "-=2"
-).fromTo(".div-open", 0.5, {
+).fromTo(".div-open", 1.5, {
     opacity:0,
-    x: 50,
+    x: 100,
     ease: Power2.easeOut
 },{
     opacity: 1,
     x: 0
-})
+}).fromTo(".cover-img", 1, {
+    opacity: 0,
+    ease: Power2.easeOut,
+    y: -60
+}, {
+    opacity: 1,
+    y: 8
+}
+)
 
 $("#search-btn").on("click", function(event) {
     console.log("search btn clicked")
