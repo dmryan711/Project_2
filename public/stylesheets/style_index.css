@@ -2,8 +2,8 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'Open Sans';
-    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;;
+    font-weight: 500;
     text-align: center;
     
   }
@@ -33,22 +33,22 @@
             transform-origin: 0% 100%;
   }
   .blocks__block:nth-child(2) {
-    background: #db5b4a;
+    background: #206F8E;
     -webkit-transform-origin: 25% 100%;
             transform-origin: 25% 100%;
   }
   .blocks__block:nth-child(3) {
-    background: #e2bb7f;
+    background: #f67b7d;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
   }
   .blocks__block:nth-child(4) {
-    background: #f67b7d;
+    background: #e2bb7f;
     -webkit-transform-origin: 75% 100%;
             transform-origin: 75% 100%;
   }
   .blocks__block:nth-child(5) {
-    background: #38c5b9;
+    background: #db5b4a;
     -webkit-transform-origin: 100% 100%;
             transform-origin: 100% 100%;
   }
@@ -126,7 +126,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    font-size: 18px;
+    font-size: 24px;
+    color: white;
     letter-spacing: 4px;
     cursor: pointer;
     transition: all 0.15s ease-out;
@@ -151,8 +152,9 @@
   }
   main h1 {
     margin: 0;
-    font-weight: 300;
-    color: #38c5b9;
+    font-weight: 280;
+    font-size: 58px;
+    color: #2AA1C9;
   }
   main h1 a {
     font-size: 48px;
@@ -165,7 +167,7 @@
   }
   main a {
     text-decoration: none;
-    color: #38c5b9;
+    color: #2AA1C9;;
     font-size: 30px;
   }
   main .plate {
