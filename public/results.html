@@ -11,22 +11,11 @@
     <!-- Google Fonts link -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Quicksand|Roboto+Condensed|Scada|Sintony" rel="stylesheet">
 </head>
-    <body id="body-results" background="img/library1.jpeg">
-    <header>
-        <!-- <div class="headerTop"> -->
-            <!-- <ul>
-                <li class="hamburger">
-                    <div class="hamburgerBtn" role="button">
-                        <span class="icon">
-                            <span class="line line-1"></span>
-                            <span class="line line-2"></span>
-                            <span class="line line-3"></span>
-                        </span>
-                         <span class="text">Open menu</span> ==$0 -->
-                    <!-- </div> -->
-                <!-- </li> -->
-                <div class="logo-header">
-                    NAME TBD
+    <!-- <body id="body-results" background="img/library1.jpeg"> -->
+        <body id="body-results"></body>
+    <!-- <header>
+                <div class="logo-header sticky-top">
+                        <img src="img/logo_scholar/logo_scholar_1.png" id="logo-scholar-inner">
                 </div>
 
         <nav class="nav justify-content-center">
@@ -40,7 +29,28 @@
                 <a class="signin-link-container" href="register.html">SIGN IN / REGISTER</a>
             </span>
         </nav>
-    </header>
+    </header> -->
+    <header class="header-school-page navbar justify-content-center sticky-top">
+            <div class="logo-scholar-line">
+                    <img src="img/logo_scholar/logo_scholar_1.png" class="logo-scholar-inner">
+                </div> 
+            </header>
+            <div class="nav-container"> 
+        <!-- <nav class="nav nav-school justify-content-center"> -->
+                <ul class="nav justify-content-center">
+                    <li class="link-container nav-item">
+                      <a class="home-link nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="link-container nav-item">
+                      <a class="results-link nav-link" href="results.html">SEARCH RESULTS</a>
+                    </li>
+                    <li class="link-container nav-item">
+                      <a class="register-link nav-link" href="register.html">SIGN IN / REGISTER</a>
+                    </li>
+                  </ul>
+                <!-- </nav> -->
+            </div>
+   
     <div class="container main-container-results"> 
         <div class="container search-results">
                 <!-- <h3 id="search-results-title">Grade 2</h3> -->
@@ -50,18 +60,16 @@
                     </div>
                         <div class="card-body tableDiv">
                           <table class="table table-hover" id="tableContainer">
-                            <thead>
+                            <!-- <thead>
                               <tr>
                                   <th class="school-type">SCHOOL TYPE</th>
                               </tr>
-                            </thead>
+                            </thead> -->
                             <tbody id="tbody">
                                     <tr>
                                     <td>
                                             <h4 class="school-name col-lg-8">Ethical Culture Fieldston</h4>
-                                            <form action="/school/{{}}">
-                                                <button class="learn-btn btn btn-sm btn-dark col-lg-2">LEARN MORE</button>
-                                            </form>
+                                            <button class="learn-btn btn btn-sm btn-dark col-lg-2">LEARN MORE</button>
                                             <button class="btn btn-sm btn-dark add-btn col-lg-2">ADD TO FAVORITES</button>
                                     </td>
                                 </tr>
@@ -87,6 +95,8 @@
                                         </td>
                                     </tr>
                             </tbody>
+                            <!-- HERE -->
+                           
                           </table>
                 
                         </div>
@@ -97,7 +107,10 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- <script src="/js/app.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+ <script src="js/app.js"></script>
 </body>
 </html>
 
