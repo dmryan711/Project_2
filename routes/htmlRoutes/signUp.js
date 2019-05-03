@@ -8,8 +8,8 @@ router.get("/",function(req,res){
 });
 
 router.post('/', passport.authenticate('local-signup', {
-    successRedirect: '/',
-    failureRedirect: '/signupfailed'
+    successRedirect: '/profile',
+    failureRedirect: '/signup'
 }
 
 ));
