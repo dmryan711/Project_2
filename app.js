@@ -11,13 +11,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var resultsRouter = require('./routes/results');
 var favoritesRouter = require('./routes/favorites');
-var registerRouter = require('./routes/register.js');
 var eventsRouter = require('./routes/events');
 var schoolRouter = require("./routes/school");
 
 //HTML ROUTES
 var profileRouter = require('./routes/htmlRoutes/profile');
-var signUpRouter = require('./routes/htmlRoutes/signUp');
+var registerRouter = require('./routes/htmlRoutes/register');
 var signInRouter = require('./routes/htmlRoutes/signIn');
 var signUpFailedRouter = require('./routes/htmlRoutes/signUpFailed');
 
@@ -54,13 +53,12 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/favorites',favoritesRouter);
 app.use('/results',resultsRouter);
-app.use('/register', registerRouter);
 app.use('/events',eventsRouter);
 app.use('/school', schoolRouter);
 
 //HTML Routes
 app.use('/profile',profileRouter);
-app.use('/signup',signUpRouter);
+app.use('/register',registerRouter);
 app.use('/signin',signInRouter);
 app.use('/signupfailed',signUpFailedRouter);
 

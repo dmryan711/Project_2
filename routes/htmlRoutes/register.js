@@ -4,14 +4,15 @@ var passport = require('passport');
 
 
 router.get("/",function(req,res){
-    res.render('signUp', { title: 'Sign Up for School Finder' });
+    res.render('register');
 });
 
 router.post('/', passport.authenticate('local-signup', {
+    
     successRedirect: '/profile',
-    failureRedirect: '/signup'
+    failureRedirect: '/'
 }
-
+     
 ));
 
 module.exports = router;
