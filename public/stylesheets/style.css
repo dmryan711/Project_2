@@ -10,6 +10,14 @@ body {
   background: url("/img/library1.jpeg");
 }
 
+.body-school {
+  background: url("/img/computer.jpg");
+}
+
+.body-results {
+  background: url("/img/library1.jpeg");
+}
+
 #body-cover {
   background-size: 90%;
 }
@@ -19,12 +27,60 @@ header {
   margin-right: auto;
   border-top: 4px solid #206f8e;
   background-color: white;
+  /* opacity: 0.8; */
   font-size: 17px;
 }
 
 .header-school-page {
   height: 110px;
-  
+  /* background-color: yellow;
+  border: 1px solid red;  */
+}
+
+.nav-school {
+  display: inline-block;
+  /* background-color: blue; */
+  margin-right: 25px;
+}
+
+.nav-ul {
+  background-color: white;
+}
+
+.results-link,
+.register-link,
+.home-link {
+  color: #206f8e;
+}
+
+.logo-scholar-inner {
+  height: 130px;
+}
+
+.logo-scholar-line {
+  display: inline-block;
+  margin-left: 8%;
+}
+
+.school-main {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 30px;
+  padding: 2%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.nav-container {
+  justify-content: center;
+  background-color: white;
+}
+.nav-school {
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  display: inline-block;
 }
 
 .nav-school {
@@ -135,6 +191,22 @@ nav {
   position: absolute;
 }
 
+/* .div-open {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  top: 20%;
+  justify-content: space-evenly;
+  align-content: center;
+  opacity: 0;
+  top: 45%;
+  left: 10%;
+} */
+
+/* #search {
+  vertical-align: middle;
+  width: 300px;
+} */
 
 #search-btn {
   margin-top: 10px;
@@ -162,6 +234,14 @@ nav {
   object-fit: cover;
   object-position: top;
 }
+
+/* #logo {
+  position: relative;
+  font-size: 50px;
+  z-index: 1;
+  font-family: "Playfair Display";
+} */
+
 
 ul {
   list-style: none;
@@ -200,6 +280,7 @@ h5 {
 
 .events-list {
   background-color: rgba(255, 255, 255, 0.9);
+  /* margin-left: 3%; */
   margin-right: 5%;
 }
 .school-name-list,
@@ -212,10 +293,6 @@ h5 {
   border-radius: 5px;
 }
 
-.school-logo-img {
-  max-width: 150px;
-}
-
 #address-title {
   font-weight: bold;
 }
@@ -225,17 +302,16 @@ h5 {
 .p3, 
 .p4 {
   margin-bottom: 2px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 #school-description,
 #school-tuition {
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 20px;
-  margin-left: 3%;
-  margin-right: 3%;
-  font-size: 19px;
-  
+  margin-left: 4%;
+  margin-right: 4%;
+  /* border: 1px solid red; */
 }
 #school-description {
   padding-top: 10px;
@@ -245,8 +321,8 @@ h5 {
 .row-school {
   margin-top: 30px;
   margin-bottom: 60px;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .btn-school-page {
@@ -329,7 +405,6 @@ th {
   font-family: 'Open Sans';
   color: white;
 }
-
 .blocks__block {
   will-change: transform;
   position: relative;
@@ -343,22 +418,22 @@ th {
           transform-origin: 0% 100%;
 }
 .blocks__block:nth-child(2) {
-  background: #206F8E;
+  background: #db5b4a;
   -webkit-transform-origin: 25% 100%;
           transform-origin: 25% 100%;
 }
 .blocks__block:nth-child(3) {
-  background: #f67b7d;
+  background: #e2bb7f;
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
 .blocks__block:nth-child(4) {
-  background: #e2bb7f;
+  background: #f67b7d;
   -webkit-transform-origin: 75% 100%;
           transform-origin: 75% 100%;
 }
 .blocks__block:nth-child(5) {
-  background: #db5b4a;
+  background: #38c5b9;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
 }
@@ -436,8 +511,7 @@ th {
   margin: 0;
   padding: 0;
   display: flex;
-  font-size: 24px;
-  color: white;
+  font-size: 18px;
   letter-spacing: 4px;
   cursor: pointer;
   transition: all 0.15s ease-out;
@@ -449,8 +523,44 @@ th {
   align-items: center;
   justify-content: center;
 }
+/* Demo */
+/* main {
+  position: relative;
+  z-index: 1;
+  padding: 3vh 5vw;
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; */
+  /* background: white; */
 
-.blocks__content-close {
-  border: 2px solid black;
-  width: 20px; 
-}
+/* main h1 {
+  margin: 0;
+  font-weight: 300;
+  color: #38c5b9;
+} */
+/* main h1 a {
+  font-size: 48px;
+} */
+/* main p {
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 340px;
+  margin: 7px auto;
+} */
+/* main a {
+  text-decoration: none;
+  color: #38c5b9;
+  font-size: 30px;
+} */
+/* main .plate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 380px;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+} */
+
