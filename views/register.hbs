@@ -1,41 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>School Finder</title>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <!-- <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Ondel\Desktop\ProjectOne\School Finder\Project_2\public\stylesheet.css"> -->
-
-</head>
-
-<body>
     <div class="row">
         <div class="column">
 
         </div>
-        <form>
+        <form id="register" name="register" method="post" action="/register">
             <h3>
                 <div style="text-align:center">Let's get started by setting up your SchoolFinder account.</div>
             </h3>
             <ul class="form-style-1">
                 <li><label>Parent Name/ Guardian <span class="required">*</span></label><input type="text" name="field1"
-                        class="field-divided" id="first_name" placeholder="First" /> <input type="text" name="field2"
-                        class="field-divided" id="last_name" placeholder="Last" /></li>
+                        class="field-divided" id="first_name" name="firstname" placeholder="First" /> <input type="text" name="field2"
+                        class="field-divided" id="last_name" name="lastname" placeholder="Last" /></li>
                 <li>
                     <label id="email">Email (This will be your login/username)<span class="required">*</span></label>
-                    <input type="email" name="field3" class="field-long" />
+                    <input name="email" type="email" class="field-long" />
                 </li>
                 <li>
-                <li><label>Must be at least 8 characters<span class="required">*</span></label><input type="text"
-                        id="parent_password" name="field1" class="field-divided" placeholder="Password" /> <input
-                        type="text" name="field2" class="field-divided" placeholder="Confirm Password" /></li>
+                <li><label>Must be at least 8 characters<span class="required">*</span></label>
+                <input type="password"
+                        id="parent_password" name="field1" class="field-divided" placeholder="Password"/> <input
+                        type="password" name="field2" class="field-divided" placeholder="Confirm Password" /></li>
 
                 <li>
                     <input type="submit" value="Submit" />
@@ -44,9 +28,7 @@
         </form>
     </div>
     <div class="column"></div>
-</body>
 
-</html>
 
 
 

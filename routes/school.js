@@ -15,6 +15,7 @@ router.get("/:id", function(req, res, next) {
     }).then((data, err) => {
       if (err) throw err;
       
+      console.log(data);
 
       let schoolData = data[0].dataValues.Schoolinfo.dataValues;
       let events = data[0].dataValues;

@@ -222,7 +222,8 @@ nav {
   border: none;
   height: 100px;
   background-color: white;
-  z-index: 1;
+  position: relative;
+  z-index: 999;
 }
 
 .cover-img {
