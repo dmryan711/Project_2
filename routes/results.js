@@ -17,7 +17,7 @@ router.get('/:grade',function(req,res,next){
           console.log(element.dataValues.school_name);
       });
         
-        res.render("results", { "data": data, "grade": req.params.grade });
+        res.render("results", { "data": data, "grade": req.params.grade, layout : false });
       })
     
 });

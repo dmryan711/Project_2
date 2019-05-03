@@ -10,8 +10,12 @@ body {
   background: url("/img/library1.jpeg");
 }
 
-#body-results {
-  background-size: 100%;
+.body-school {
+  background: url("/img/computer.jpg");
+}
+
+.body-results {
+  background: url("/img/library1.jpeg");
 }
 
 #body-cover {
@@ -79,12 +83,56 @@ header {
   display: inline-block;
 }
 
+.nav-school {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.nav-ul {
+  background-color: white;
+}
+
+.results-link,
+.register-link,
+.home-link {
+  color: #206f8e;
+}
+
+.logo-scholar-inner {
+  height: 130px;
+}
+
+.logo-scholar-line {
+  display: inline-block;
+  margin-left: 8%;
+}
+
+.school-main {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 30px;
+  padding: 2%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.nav-container {
+  justify-content: center;
+  background-color: white;
+}
+.nav-school {
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  display: inline-block;
+}
+
 .logo-header {
   font-size: 80px;
   letter-spacing: 0;
   text-align: center;
-  font-family: "Scada";
-  /* color: #206f8e; */
+  font-family: "Scada", sans-serif;
 }
 
 a {
@@ -92,7 +140,8 @@ a {
 }
 
 a:hover {
-  color: #206f8e;
+  color: #8c734b;
+  text-decoration: underline;
 }
 
 
@@ -125,26 +174,12 @@ nav {
   border: 1px solid #ccc;
 }
 
-/* img {
-  width: 130%;
-  z-index: 0;
-} */
-
-/* #search {
-  width: 300px;
-  z-index: 1;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-} */
-
 .div-animate {
   background-color: white;
   opacity: 0.9;
   z-index: 2;
   width: 40%;
   height: 20%;
-  /* overflow: hidden; */
 }
 
 .div-closed {
@@ -315,7 +350,7 @@ th {
 
 #sr,
 #search-results-title {
-  font-size: 20px;
+  font-size: 19px;
   margin-top: 2%;
 }
 

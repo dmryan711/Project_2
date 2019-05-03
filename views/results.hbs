@@ -1,64 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School</title>
+    <!-- Bootstrap CSS link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Google Fonts link -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Quicksand|Roboto+Condensed|Scada|Sintony"
+        rel="stylesheet">
+</head>
+
+<body class="body-results">
     <header class="header-school-page navbar justify-content-center sticky-top">
-            <div class="logo-scholar-line">
-                    <img src="/img/logo_scholar/logo_scholar_1.png" class="logo-scholar-inner">
-                </div> 
-            </header>
-            <div class="nav-container"> 
+        <div class="logo-scholar-line">
+            <img src="/img/logo_scholar/logo_scholar_1.png" class="logo-scholar-inner">
+        </div>
+    </header>
+    <div class="nav-container">
         <!-- <nav class="nav nav-school justify-content-center"> -->
-                <ul class="nav justify-content-center">
-                    <li class="link-container nav-item">
-                      <a class="home-link nav-link" href="cover.html">HOME</a>
-                    </li>
-                    <li class="link-container nav-item">
-                      <a class="results-link nav-link" href="results.html">SEARCH RESULTS</a>
-                    </li>
-                    <li class="link-container nav-item">
-                      <a class="register-link nav-link" href="register.html">SIGN IN / REGISTER</a>
-                    </li>
-                  </ul>
-                <!-- </nav> -->
-            </div>
-            <div class="container main-container-results"> 
-    <div class="container search-results">
-        <!-- <h3 id="search-results-title">Grade 2</h3> -->
-        <div class="container card container-results-all">
-            <div class="row justify-content-between">
-                <h4 class="card-title col-lg-3" id="sr">SEARCH RESULTS</h4>
-                <h4 id="search-results-title" class="col-lg-2">Grade: {{grade}}</h4>
-            </div>
-            <div class="card-body tableDiv">
-                <table class="table table-hover" id="tableContainer">
-                    {{!-- <thead>
+        <ul class="nav justify-content-center">
+            <li class="link-container nav-item">
+                <a class="home-link nav-link" href="/">HOME</a>
+            </li>
+            <li class="link-container nav-item">
+                <a class="results-link nav-link" href="/">FAQ</a>
+            </li>
+            <li class="link-container nav-item">
+                <a class="register-link nav-link" href="register">SIGN IN / REGISTER</a>
+            </li>
+        </ul>
+        <!-- </nav> -->
+    </div>
+    <div class="container main-container-results">
+        <div class="container search-results">
+            <!-- <h3 id="search-results-title">Grade 2</h3> -->
+                <div class="container card container-results-all">
+                    <div class="row justify-content-between">
+                        <h4 class="card-title col-lg-3" id="sr">SEARCH RESULTS</h4>
+                        <h4 id="search-results-title" class="col-lg-2">Grade: {{grade}}</h4>
+                    </div>
+                    <div class="card-body tableDiv">
+                        <table class="table table-hover" id="tableContainer">
+                                {{!-- <thead>
                         <tr>
                             <th class="school-type">SCHOOL TYPE</th>
                         </tr>
                     </thead> --}}
-                    <tbody id="tbody">
-                        {{#each data}}
-                        <tr>
-                            <td class="row">
-                                <h4 class="school-name col-lg-7">{{this.dataValues.school_name}}</h4>
-                                <form class="col-lg-5 row" action="/school/{{this.dataValues.school_id}}">
-                                    <button class="learnBtn btn btn-sm btn-dark col-lg-5" value="{{this.dataValues.school_id}}">LEARN MORE</button>
-                                <button class="btn btn-sm btn-dark add-btn col-lg-5 ml-2">ADD TO FAVORITES</button>
-                                </form>
-                            </td>
-                        </tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-
+                            <tbody id="tbody">
+                                {{#each data}}
+                                <tr>
+                                    <td class="row">
+                                        <h4 class="school-name col-lg-7">{{this.dataValues.school_name}}</h4>
+                                        <form class="col-lg-5 row" action="/school/{{this.dataValues.school_id}}">
+                                            <button class="learnBtn btn btn-sm btn-dark col-lg-5"
+                                                value="{{this.dataValues.school_id}}">LEARN MORE</button>
+                                            <button class="btn btn-sm btn-dark add-btn col-lg-5 ml-2">ADD TO
+                                                FAVORITES</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                {{/each}}
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
 
-<!-- JQUERY AND JS LINKS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<script src="/js/app.js"></script>
+        <!-- JQUERY AND JS LINKS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/app.js"></script>
+</body>
+
+</html>
+

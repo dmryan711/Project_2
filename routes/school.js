@@ -14,9 +14,15 @@ router.get("/:id", function(req, res, next) {
       ]
     }).then((data, err) => {
       if (err) throw err;
-      console.log(data[0]);
+      
 
-      res.render("school");
+      let schoolData = data[0].dataValues.Schoolinfo.dataValues;
+      let events = data[0].dataValues;
+       
+      console.log("DEBUG SCHOOLDATA: ", schoolData);
+      console.log("DEBUG EVENTS:", events);
+      res.render("school", { "schoolData": schoolData, "events": events, layout: false });
+
     });
     
 });
