@@ -1,0 +1,59 @@
+
+          <!-- Component starts here-->
+          <ul class="blocks-names">
+            <li class="blocks__name">Charter</li>
+            <li class="blocks__name">Private</li>
+            <li class="blocks__name">Parochial</li>
+            <li class="blocks__name">International</li>
+            <li class="blocks__name">Public</li>
+          </ul>
+          <ul class="blocks">
+            <li class="blocks__block" id="1"></li>
+            <li class="blocks__block" id="2"></li>
+            <li class="blocks__block" id="3"></li>
+            <li class="blocks__block" id="4"></li>
+            <li class="blocks__block" id="5"></li>
+          </ul>
+          <ul class="blocks-content">
+            <li class="blocks-content__content">
+              <div class="content__close"></div>
+              <h2>Charter Schools</h2>
+              <br>
+              <p>Charter schools are independent public schools founded by not-for-profit Boards of Trustees. They operate under a contract (or "charter") of up to five years. Charter schools are New York City public schools and they are open to all New York City students. Many charter schools have unique educational approaches that may include longer school days, a longer school year, or themed programs.</p><i class="blocks__content-close fa fa-window-close"></i>
+              <button type="button" id="charter_search" class="btn btn-dark"><i class="fas fa-search"></i> Charter Schools</button>
+            </li>
+            <li class="blocks-content__content">
+              <h2>Private Schools</h2>
+              <p>A parochial school is a private primary or secondary school maintained and supported by a religious body, such as Roman Catholic parishes, Protestant churches or Jewish organizations.  Parochial schools are separate from the public school system and religious instruction is included in the curriculum.  Schools attached to Roman Catholic parishes make up the largest number of parochial schools.</p><i class="blocks__content-close fa fa-window-close"></i>
+              <button type="button" id="private_search" class="btn btn-dark"><i class="fas fa-search"></i> Private Schools</button>
+            </li>
+            <li class="blocks-content__content">
+              <h2>Parochial Schools</h2>
+              <p>New York is home to very many private schools and they are extremely competitive academically. Many also have stringent acceptance procedures, so waiting lists can be long and prospective students must often pass academic tests and interviews. The process can be daunting, and some parents hire private school consulting agencies to increase their child’s chances of getting into the top schools In general, the standard of education at private schools tends to be better than at the average public school. Private schools also tend to have state-of-the-art facilities that allow their students to pursue extra-curricular activities such as sport and music to a higher level. 
+                The downside to private school education in New York is the high costs. Expat parents will also need to budget for other costs such as uniforms, textbooks, extra-curricular classes and field trips.</p><i class="blocks__content-close fa fa-window-close"></i>
+                <button type="button" id="parochial_search" class="btn btn-dark"><i class="fas fa-search"></i> Parochial Schools</button>
+              </li>
+            <li class="blocks-content__content">
+              <h2>International Schools</h2>
+              <p>In a city as diverse and international as New York, it will come as no surprise that there are a large number of schools available to meet the demands of the city's expat population.
+                There is a broad range of international schools in New York which provide children with an education based on the curriculum followed in their home country and taught in their native language. International schools are a good option for students whose first language is not English, as well as those who are only in the USA for a short time. 
+                Fees at international schools tend to be very high. Many of the more popular international schools in New York are over-subscribed and have long waiting lists. Therefore expats who wish to send their child to one of these schools should begin the application process as soon as possible.
+                </p><i class="blocks__content-close fa fa-window-close"></i>
+                <button type="button" id="international_search" class="btn btn-dark"><i class="fas fa-search"></i> International Schools</button>
+            </li>
+            <li class="blocks-content__content">
+                <h2>Public Schools</h2>
+                <p>Public schools are tuition free schools funded and operated by three levels of government:  the United States Department of Education on the federal level, the state-level departments, and the local school district level.  The New York City Department of Education (DOE) operates the largest school district in the United States, serving 1.1 million students in over 1,800 schools.  
+                For more information about New York City public schools visit the following websites:
+              <br>
+              <a href="https://www.schools.nyc.gov/">New York City Department of Education (DOE)</a>
+              <br>
+              <a href="http://schools.nyc.gov/schoolsearch/">Find your zoned school in New York City</a>
+              <br>
+              <a href="http://insideschools.org/">Insideschools</a>
+            </p><i class="blocks__content-close fa fa-window-close"></i>
+            </li>
+          </ul>
+
+        </body>
+      </html>

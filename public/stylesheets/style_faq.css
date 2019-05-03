@@ -3,13 +3,21 @@
   box-sizing: border-box;
 }
 
+#logo-container {
+  width: 170px;
+  height: 100px;
+  position: relative;
+}
+
+
+
 img {
   width: 130%;
   z-index: 0;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Sintony", sans-serif;
   background-image: url('../img/background-04.png');
 }
 .heading-primary {
@@ -129,3 +137,5 @@ background-color: rgb(211, 24, 102);
     transform: scale(0.9) rotateX(-60deg);
   }
 }
+
+

@@ -4,23 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>School Finder</title>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <!-- <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Ondel\Desktop\ProjectOne\School Finder\Project_2\public\stylesheet.css"> -->
     
+    <title>Parent</title>
+    <!-- Bootstrap CSS link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Quicksand|Roboto+Condensed|Scada|Sintony" rel="stylesheet">
 </head>
-<body>
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-                
-              
-    <form>
-    <h3><div style="text-align:center">Let's get started by setting up your SchoolFinder account.</div></h3>
-        <ul class="form-style-1">
+
+<body id="body-register" background="img/writing1.jpeg">
+
+    <header class="header-school-page navbar justify-content-center sticky-top">
+            <div class="logo-scholar-line">
+                    <img src="img/logo_scholar/logo_scholar_1.png" class="logo-scholar-inner">
+                </div> 
+            </header>
+            <div class="nav-container"> 
+        <!-- <nav class="nav nav-school justify-content-center"> -->
+                <ul class="nav justify-content-center">
+                    <li class="link-container nav-item">
+                      <a class="home-link nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="link-container nav-item">
+                      <a class="results-link nav-link" href="results.html">SEARCH</a>
+                    </li>
+                    <li class="link-container nav-item">
+                      <a class="register-link nav-link" href="register.html">FAQ/Map</a>
+                    </li>
+                  </ul>
+                <!-- </nav> -->
+            </div>
+
+
+
+
+        <!-- <div class="row">
+            <div class="col-sm-8 col-sm-offset-4"> -->
+
+<div class="row">
+        <div class="col-lg-3">
+        </div>
+<div class="col-lg-6">
+
+<div class="container main-container-parents"> 
+        <div class="container parent-box">
+            <div class="container parent-info">
+                <br>
+            <h2 id="welcome" style="text-align:center">Welcome! Register Below</h2>
+<form>
+        <ul class="form-style-1" >
             <li><label>Parent Name/ Guardian <span class="required">*</span></label><input type="text" name="field1" class="field-divided" id="first_name" placeholder="First" /> <input type="text" name="field2" class="field-divided" id="last_name" placeholder="Last" /></li>
             <li>
                 <label id="email">Email (This will be your login/username)<span class="required">*</span></label>
@@ -36,6 +69,10 @@
         </form>
         </div> 
     </div>
+</div>
+</div>
+</div>
+                
 
 
 

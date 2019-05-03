@@ -8,6 +8,27 @@
     
   }
 
+  
+#logo-container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+
+  .logo-scholar-inner {
+    height: 130px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo-scholar-line {
+    display: inline-block;
+    margin-left: 8%;
+  }
+
   .blocks {
     position: fixed;
     bottom: 0;
@@ -154,7 +175,7 @@
     margin: 0;
     font-weight: 280;
     font-size: 58px;
-    color: #2AA1C9;
+    color: #00708f;
   }
   main h1 a {
     font-size: 48px;
@@ -167,7 +188,7 @@
   }
   main a {
     text-decoration: none;
-    color: #2AA1C9;;
+    color: #00708f;
     font-size: 30px;
   }
   main .plate {
