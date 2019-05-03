@@ -182,6 +182,8 @@ function removeFav() {
      $("#row"+idRemoved).empty();
      $("#row"+idRemoved).remove();
 }
+
+$('#body-results').css("background-image", "url(/img/library1.jpeg)"); 
 //REMOVE END
 //========================================================
  

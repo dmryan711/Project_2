@@ -40,7 +40,7 @@
                         <div id="parent-info" class="col-lg-6">
                             <h5>Account Info</h5>
                             <p class="parent-name">Parent name</p>
-                            <p id="parent-email">mariana.finamori@gmail.com</p>
+                            <p id="parent-email">name@gmail.com</p>
                         </div>
                     </div>
                     </div>
@@ -51,12 +51,9 @@
                                     </div>
                                         <div class="card-body tableDiv">
                                           <table class="table table-hover" id="tableContainer">
-                                            <!-- <thead>
-                                              <tr>
-                                                  <th class="school-type">SCHOOL TYPE</th>
-                                              </tr>
-                                            </thead> -->
+                                              {{#if favorites}}
                                             <tbody id="tbodyfav">
+                                                {{#each favorites}}
                                                     <tr>
                                                     <td>
                                                             <h4 class="school-name col-lg-8">Ethical Culture Fieldston</h4>
@@ -64,6 +61,7 @@
                                                             <button class="btn btn-sm btn-dark remove-btn col-lg-2">REMOVE</button>
                                                     </td>
                                                 </tr>
+                                                {{/each}}
                                                 <tr> 
                                                 <td>
                                                         <h4 class="school-name-list col-lg-8">Avenues</h4>
@@ -73,6 +71,9 @@
                                             </tr>
                                             </tbody>
                                           </table>
+                                          {{#else}}
+                                          <h5>No favorites</h5>
+                                          {{/if}}
                                 
                                         </div>
                                       </div>
