@@ -12,7 +12,8 @@ var usersRouter = require('./routes/users');
 var resultsRouter = require('./routes/results');
 var favoritesRouter = require('./routes/favorites');
 var eventsRouter = require('./routes/events');
-var schoolRouter = require("./routes/school");
+var schoolRouter = require('./routes/school');
+var faqRouter = require('./routes/faq');
 
 //HTML ROUTES
 var profileRouter = require('./routes/htmlRoutes/profile');
@@ -55,6 +56,7 @@ app.use('/favorites',favoritesRouter);
 app.use('/results',resultsRouter);
 app.use('/events',eventsRouter);
 app.use('/school', schoolRouter);
+app.use('/faq', faqRouter);
 
 //HTML Routes
 app.use('/profile',profileRouter);
