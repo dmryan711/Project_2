@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         phone: { type: DataTypes.STRING(15) },
         email: { type: DataTypes.STRING(50) },
         description: { type: DataTypes.TEXT },
-        tuition: { type: DataTypes.INTEGER },
+        tuition: { type: DataTypes.STRING },
         website: { type: DataTypes.STRING(50) }
       },
       { tableName: "Schoolinfo" },
