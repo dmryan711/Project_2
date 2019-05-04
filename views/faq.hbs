@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style_faq.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Quicksand|Roboto+Condensed|Scada|Sintony"
+    rel="stylesheet">
+  <link rel="icon" href="img/icon.png" />
+<style> 
+* {
+  box-sizing: border-box;
+}
+
+/* #logo-container {
+  width: 170px;
+  height: 100px;
+  position: left;
+} */
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #206F8A;
+  opacity: 0.95;
+  font-size: 17px;
+  
+}
+
+.results-link,
+.register-link,
+.home-link {
+  color: white;
+}
+
+
+.logo-scholar-inner {
+  height: 100px;
+}
+
+img {
+  width: 100%;
+  z-index: 0;
+}
+
+body {
+  font-family: "Sintony", sans-serif;
+  background-image: url('../img/background-04.png');
+}
+.heading-primary {
+  font-size: 2em;
+  padding: 2em;
+  text-align: center;
+}
+.accordion dl,
+.accordion-list {
+  border: 1px solid #ddd;
+  &:after {
+    content: "";
+    display: block;
+    height: 1em;
+    width: 100%;
+    background-color: darken(#38cc70, 10%);
+  }
+}
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.accordion p {
+  padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+  position: relative;
+  background-color: #eee;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em 0 2em 0;
+}
+.accordionTitle,
+
+/* .accordion2 {
+background-color: rgb(211, 24, 102);
+} */
+
+.accordion3__Heading {
+  background-color: rgb(32, 111, 142);
+  text-align: center;
+  font-weight: 700;
+  padding: 2em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid darken(#206F8A, 5%);
+  &:before {
+    content: "+";
+    font-size: 1.5em;
+    line-height: 0.5em;
+    float: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover {
+    background-color: darken(rgb(129, 129, 129), 10%);
+  }
+}
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: darken(#206F8E, 10%);
+  &:before {
+    transform: rotate(-225deg);
+  }
+}
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+  //SHAME: magic number to allow the accordion to animate
+
+  max-height: 50em;
+  transition: max-height 1s;
+
+  @media screen and (min-width: 48em) {
+    max-height: 15em;
+    transition: max-height 0.5s;
+  }
+}
+
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+.animateIn {
+  animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+.animateOut {
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+</style>
+
+
+</head>
+
+
+<html>
+
+<body>
+  <header class="header-school-page navbar justify-content-center sticky-top">
+    <a href="/">
+      <img src="/img/logo_scholar/logo_scholar_white.png" alt="scholar_logo" class="logo-scholar-inner">
+    </a>
+
+    </div>
+
+    <br>
+    <div class="nav-container" style="color:white">
+      <!-- <nav class="nav nav-school justify-content-center"> -->
+      <ul class="nav justify-content-left">
+        <li class="link-container nav-item">
+          <a class="home-link nav-link" href="/">HOME</a>
+        </li>
+        <li class="link-container nav-item">
+          <a class="register-link nav-link" href="/register">SIGN IN / REGISTER</a>
+        </li>
+      </ul>
+      <!-- </nav> -->
+    </div>
+    <div>
+  </header>
+
+  <div class="container">
+
+    <h2 style="text-align:center; color:#206F8E">NYC School Types</h2>
+
+    <div class="row">
+        <div class="col-lg-2">
+          </div>
+      <div class="col-lg-8">
+        <main>
+          <div class="container">
+            <div class="accordion">
+              <dl>
+                <dt>
+                  <a href="#accordion1" aria-expanded="false" aria-controls="accordion1"
+                    class="accordion-title accordionTitle js-accordionTrigger">Private Schools</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                  <p>New York is home to very many private schools and they are extremely competitive academically. Many
+                    also have stringent acceptance procedures, so waiting lists can be long and prospective students
+                    must often pass academic tests and interviews. The process can be daunting, and some parents hire
+                    private school consulting agencies to increase their child’s chances of getting into the top schools
+                    In general, the standard of education at private schools tends to be better than at the average
+                    public school.
+                    <br><br>Private schools also tend to have state-of-the-art facilities that allow their students to
+                    pursue extra-curricular activities such as sport and music to a higher level.
+                    <br><br>The downside to private school education in New York is the high costs. Expat parents will
+                    also need to budget for other costs such as uniforms, textbooks, extra-curricular classes and field
+                    trips.</p>
+                </dd>
+                <dt>
+                  <a href="#accordion2" aria-expanded="false" aria-controls="accordion2"
+                    class="accordion-title accordionTitle js-accordionTrigger">
+                    Charter Schools</a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                  <p>Charter schools are independent public schools founded by not-for-profit Boards of Trustees. They
+                    operate under a contract (or "charter") of up to five years. Charter schools are New York City
+                    public schools and they are open to all New York City students. Many charter schools have unique
+                    educational approaches that may include longer school days, a longer school year, or themed
+                    programs.</p>
+                </dd>
+                <dt>
+                  <a href="#accordion3" aria-expanded="false" aria-controls="accordion3"
+                    class="accordion-title accordionTitle js-accordionTrigger">
+                    Parochial Schools
+                  </a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                  <p>A parochial school is a private primary or secondary school maintained and supported by a religious
+                    body, such as Roman Catholic parishes, Protestant churches or Jewish organizations. Parochial
+                    schools are separate from the public school system and religious instruction is included in the
+                    curriculum. Schools attached to Roman Catholic parishes make up the largest number of parochial
+                    schools.
+                  </p>
+                </dd>
+
+
+                <dt>
+                  <a href="#accordion4" aria-expanded="false" aria-controls="accordion3"
+                    class="accordion-title accordionTitle js-accordionTrigger">
+                    International Schools
+                  </a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                  <p>For such a cosmopolitan hub, New York has a surprisingly limited choice of international schools.
+                    But perhaps this is to be expected. Language is after all not a barrier, and the curriculum is
+                    broadly similar to that which you will find in Britain. So plenty of expats opt to send their
+                    offspring to the city’s many excellent and even famous private schools, while a good number plump
+                    for the public sector, which, at elementary level at least, has greatly improved.
+
+                    <br><br>So the first decision you will make when relocating to Manhattan is whether to go the usual
+                    expat route and send your children to one of the city’s handful of international schools, or,
+                    instead, compete for a place at a local private or public school. </p>
+                </dd>
+
+                <dt>
+                  <a href="#accordion5" aria-expanded="false" aria-controls="accordion3"
+                    class="accordion-title accordionTitle js-accordionTrigger">
+                    Public Schools
+                  </a>
+                </dt>
+                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                  <p>Public schools are tuition free schools funded and operated by three levels of government: the
+                    United States Department of Education on the federal level, the state-level departments, and the
+                    local school district level. The New York City Department of Education (DOE) operates the largest
+                    school district in the United States, serving 1.1 million students in over 1,800 schools.
+                    For more information about New York City public schools by visiting the website of the <a
+                      href="https://www.schools.nyc.gov/">New York City Department of Education (DOE)</a></p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div class="col-lg-2">
+      </div>
+    </div>
+
+
+
+    <hr style="border: none; border-bottom: 1px solid gray; width:80%">
+    <br><br>
+
+
+    <h2 style="text-align:center; color:#206F8E">Map of NYC Private/Charter Schools</h1>
+      <div class="card-body">
+        <iframe width="100%" height="820" frameborder="0"
+          src="https://ondel.carto.com/builder/539196f3-d3c9-43de-9d1a-87acc047ecfb/embed" allowfullscreen
+          webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+
+      <!-- JAVASCRIPT -->
+<script> 
+      //uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+(function() {
+    var d = document,
+      accordionToggles = d.querySelectorAll(".js-accordionTrigger"),
+      setAria,
+      setAccordionAria,
+      switchAccordion,
+      touchSupported = "ontouchstart" in window,
+      pointerSupported = "pointerdown" in window;
+  
+    skipClickDelay = function(e) {
+      e.preventDefault();
+      e.target.click();
+    };
+  
+    setAriaAttr = function(el, ariaType, newProperty) {
+      el.setAttribute(ariaType, newProperty);
+    };
+    setAccordionAria = function(el1, el2, expanded) {
+      switch (expanded) {
+        case "true":
+          setAriaAttr(el1, "aria-expanded", "true");
+          setAriaAttr(el2, "aria-hidden", "false");
+          break;
+        case "false":
+          setAriaAttr(el1, "aria-expanded", "false");
+          setAriaAttr(el2, "aria-hidden", "true");
+          break;
+        default:
+          break;
+      }
+    };
+    //function
+    switchAccordion = function(e) {
+      console.log("triggered");
+      e.preventDefault();
+      var thisAnswer = e.target.parentNode.nextElementSibling;
+      var thisQuestion = e.target;
+      if (thisAnswer.classList.contains("is-collapsed")) {
+        setAccordionAria(thisQuestion, thisAnswer, "true");
+      } else {
+        setAccordionAria(thisQuestion, thisAnswer, "false");
+      }
+      thisQuestion.classList.toggle("is-collapsed");
+      thisQuestion.classList.toggle("is-expanded");
+      thisAnswer.classList.toggle("is-collapsed");
+      thisAnswer.classList.toggle("is-expanded");
+  
+      thisAnswer.classList.toggle("animateIn");
+    };
+    for (var i = 0, len = accordionToggles.length; i < len; i++) {
+      if (touchSupported) {
+        accordionToggles[i].addEventListener("touchstart", skipClickDelay, false);
+      }
+      if (pointerSupported) {
+        accordionToggles[i].addEventListener(
+          "pointerdown",
+          skipClickDelay,
+          false
+        );
+      }
+      accordionToggles[i].addEventListener("click", switchAccordion, false);
+    }
+  })();
+</script>
+
+</body>
+
+</html>
