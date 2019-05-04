@@ -1,60 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-
-<div class="container">
-    <div class="row row-school">
-        <div id="div-school-logo" class="col-lg-2">
-            <img src="/img/schools_logos/{{schoolData.logo}}" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>School</title>
+  <!-- Bootstrap CSS link  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <!-- Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Playfair+Display|Quicksand|Roboto+Condensed|Scada|Sintony" rel="stylesheet">
+</head>
+<body id="body-school" class="body-school">
+    <header class="header-school-page navbar justify-content-center sticky-top">
+        <div class="logo-scholar-line">
+            <img src="/img/logo_scholar/logo_scholar_1.png" class="logo-scholar-inner">
+        </div> 
+    </header>
+    <div class="nav-container"> 
+        <!-- <nav class="nav nav-school justify-content-center"> -->
+        <ul class="nav justify-content-center">
+            <li class="link-container nav-item">
+                <a class="home-link nav-link" href="/">HOME</a>
+            </li>
+            <li class="link-container nav-item">
+                <a class="results-link nav-link" href="/">FAQ</a>
+            </li>
+            <li class="link-container nav-item">
+                <a class="register-link nav-link" href="register">SIGN IN / REGISTER</a>
+            </li>
+        </ul>
+                <!-- </nav> -->
         </div>
-        <div class="col-lg-6">
-            <h3 id="school-name">{{schoolData.school_name}}
-
-            </h3>
-        </div>
-        <div class="col-lg-3">
-            <h5>Address</h5>
-            <p id="school-address">{{schoolData.school-address}}</p>
-            <p><span id="school-city">{{schoolData.city}} </span><span id="school-state">{{schoolData.state}}, </span><span
-                    id="school-zip">{{schoolData.zipcode}}</span></p>
-            <p id="school-phone">Telephone: {{schoolData.phone}}</p>
-            <p id="school-website">{{shoolData.website}}</p>
-        </div>
-    </div>
-    <div class="row row-school">
-        <div class="col-lg-9">
+       
+        <div class="container school-main">
+            <div class="row row-school">
+                <div id="div-school-logo" class="col-lg-3">
+                    <img src="/img/schools_logos/{{schoolData.logo}}" class="school-logo-img" alt="SCHOOL LOGO">
+                </div>
+                <div class="col-lg-6">
+                    <h4 id="school-name">{{schoolData.school_name}}</h4>
+                </div>
+                <div class="col-lg-3 ml-0 pl-0">
+                    <h5 id="address-title">Address</h5>
+                    <p id="school-address" class="p1">{{schoolData.address}}</p>
+                    <p class="p2"><span id="school-city">{{schoolData.city}}</span><span id="school-state">{{schoolData.state}}</span><span id="school-zip">{{schoolData.zipcode}}</span></p>  
+                    <p class="p3" id="school-phone">Telephone: {{schoolData.phone}}</p>
+                    <a href="{{schoolData.website}}"><p class="p4" id="school-website">{{schoolData.website}}</p></a>
+                </div>
+            </div>
+                <!-- <div class="row row-school"> -->
+                    <!-- <div class="col-lg-9"> -->
             <p id="school-description">{{schoolData.description}}</p>
             <p id="school-tuition">Tuition: ${{schoolData.tuition}}</p>
 
+                    <!-- </div>
+                </div> -->
+            
+            <div class="container row-school">
+                <h4>Events</h4>
+                <ul class="list-group events-list">
+                    {{#if events}}
+                        <li class="list-group-item row">
+                            <p class="event-name-list col-lg-6">{{events.event}}</p>
+                            <p class="event-date col-lg-3">{{events.date}}</p>
+                        </li>
+                    {{else}}
+                        <li class="list-group-item row">
+                            <p class="event-name-list col-lg-6">No events</p>
+                            <p class="event-date col-lg-2"></p>
+                        </li>
+                    {{/if}}
+                </ul>
+            </div>
+            <div class="row">
+                <button class="btn-school-page btn btn-dark add-btn col-lg-2">ADD TO FAVORITES</button>
+            </div>
+
         </div>
-    </div>
 
-    <div class="row-school">
-        <h4>Events</h4>
-        <ul class="list-group results-list">
-            {{#if events}}
-            <li class="list-group-item row">
-                <p class="event-name-list col-lg-7">{{events.event}}</p>
-                <p class="event-date col-lg-2">{{events.date}}</p>
-            </li>
-            {{else}}
-            <li class="list-group-item row">
-                <p class="event-name-list col-lg-7">No Events</p>
-                <p class="event-date col-lg-2"></p>
-            </li>
-            {{/if}}
-        </ul>
-    </div>
-    <div class="row">
-        <button class="btn btn-sm btn-dark add-btn col-lg-2">ADD TO FAVORITES</button>
-    </div>
-
-</div>
-<!-- JQUERY AND JS LINKS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<script src="/js/app.js"></script>
+   <!-- JQUERY AND JS LINKS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+   <script src="js/app.js"></script>
+</body>
+</html>
