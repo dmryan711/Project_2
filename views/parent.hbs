@@ -51,9 +51,9 @@
                                     </div>
                                         <div class="card-body tableDiv">
                                           <table class="table table-hover" id="tableContainer">
-                                              {{!-- {{#if favorites}} --}}
+                                              {{#if favorites}}
                                             <tbody id="tbodyfav">
-                                                {{!-- {{#each favorites}} --}}
+                                                {{#each favorites}}
                                                     <tr>
                                                     <td>
                                                             <h4 class="school-name col-lg-8">Ethical Culture Fieldston</h4>
@@ -61,12 +61,12 @@
                                                             <button class="btn btn-sm btn-dark remove-btn col-lg-2">REMOVE</button>
                                                     </td>
                                                 </tr>
-                                                {{!-- {{/each}} --}}
+                                                {{/each}}
                                             </tbody>
                                           </table>
-                                          {{!-- {{#else}} --}}
-                                          <h5>No favorites</h5>
-                                          {{!-- {{/if}} --}}
+                                          {{else}}
+                                          <h5>Sorry there are currently no favorites selected.</h5>
+                                          {{/if}}
                                 
                                         </div>
                                       </div>

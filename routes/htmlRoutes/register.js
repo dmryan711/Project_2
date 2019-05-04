@@ -4,7 +4,7 @@ var passport = require('passport');
 
 
 router.get("/",function(req,res){
-    res.render('register');
+    res.render('register', {layout:false});
 });
 
 router.post('/', passport.authenticate('local-signup', {
